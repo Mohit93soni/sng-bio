@@ -21,7 +21,9 @@ export function PlaceholderPage({ title, description }: PlaceholderPageProps) {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-8">
-              This page is currently under development. Our team is working hard to bring you detailed content about our cutting-edge biomedical solutions.
+              This page is currently under development. Our team is working hard
+              to bring you detailed content about our cutting-edge biomedical
+              solutions.
             </p>
             <Button variant="outline" onClick={() => window.history.back()}>
               Go Back

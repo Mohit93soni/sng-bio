@@ -29,7 +29,9 @@ export function Navigation() {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">S</span>
+                <span className="text-primary-foreground font-bold text-sm">
+                  S
+                </span>
               </div>
               <span className="text-xl font-bold text-foreground">
                 SND Regenics
@@ -48,7 +50,7 @@ export function Navigation() {
                     "px-3 py-2 text-sm font-medium transition-colors hover:text-primary",
                     isActive(item.href)
                       ? "text-primary border-b-2 border-primary"
-                      : "text-muted-foreground"
+                      : "text-muted-foreground",
                   )}
                 >
                   {item.name}
@@ -86,7 +88,7 @@ export function Navigation() {
                     "block px-3 py-2 text-base font-medium transition-colors",
                     isActive(item.href)
                       ? "text-primary bg-accent"
-                      : "text-muted-foreground hover:text-primary hover:bg-accent"
+                      : "text-muted-foreground hover:text-primary hover:bg-accent",
                   )}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
