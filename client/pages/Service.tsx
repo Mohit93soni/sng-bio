@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
-import { Microscope, GraduationCap, Users, Clock, CheckCircle, ArrowRight, FlaskConical, Cpu, Target, Beaker, BookOpen, Award, Settings, Zap } from "lucide-react";
+import { Microscope, GraduationCap, Users, Clock, CheckCircle, ArrowRight, FlaskConical, Cpu, Target, Beaker, BookOpen, Award, Settings, Zap, TrendingUp } from "lucide-react";
 
 export default function Service() {
   return (
