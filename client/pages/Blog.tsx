@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/ui/navigation";
+import { Footer } from "@/components/ui/footer";
 import { SEOHead } from "@/components/ui/seo-head";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
