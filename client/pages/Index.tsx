@@ -7,8 +7,52 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Microscope, Dna, Brain, ChevronRight, Beaker, Users, Target, Globe } from "lucide-react";
 
 export default function Index() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SND Regenics",
+    "description": "Leading biomedical research and development firm specializing in 3D bioprinting, electrospinning, and regenerative medicine solutions.",
+    "url": "https://sndregenics.com",
+    "logo": "https://sndregenics.com/logo.png",
+    "foundingDate": "2020",
+    "industry": "Biotechnology",
+    "specialties": [
+      "3D Bioprinting",
+      "Electrospinning",
+      "Neural Tissue Engineering",
+      "Regenerative Medicine",
+      "Bioinformatics",
+      "Machine Learning"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Biotech Drive",
+      "addressLocality": "Research Park",
+      "addressRegion": "CA",
+      "postalCode": "94301",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-234-567-8900",
+      "contactType": "customer service",
+      "email": "info@sndregenics.com"
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEOHead
+        title="SND Regenics - Revolutionary Biomedical Research & 3D Bioprinting Technology"
+        description="Leading biomedical R&D firm pioneering hybrid 3D bioprinting and electrospinning technology for regenerative medicine, neural tissue engineering, and personalized healthcare solutions."
+        keywords="biomedical research, 3D bioprinting, electrospinning, regenerative medicine, neural tissue engineering, tissue scaffolds, drug testing, organogenesis, bioinformatics, machine learning healthcare"
+        ogTitle="SND Regenics - Pioneering Regenerative Medicine Through Innovation"
+        ogDescription="Discover cutting-edge hybrid bioprinting technology that combines 3D bioprinting and electrospinning to revolutionize drug testing, organogenesis, and regenerative medicine."
+        canonicalUrl="https://sndregenics.com"
+        structuredData={structuredData}
+      />
+
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -322,6 +366,7 @@ export default function Index() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
