@@ -479,6 +479,8 @@ export default function Research() {
             </div>
           </div>
         </section>
+
+        <Footer />
       </div>
     </>
   );
