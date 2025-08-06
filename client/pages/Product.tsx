@@ -7,8 +7,35 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Microscope, Dna, Brain, Users, TrendingUp, BarChart3, FlaskConical, Zap } from "lucide-react";
 
 export default function Product() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "SND Regenics Hybrid Fabrication Technology",
+    "description": "Revolutionary hybrid bioprinting and electrospinning platform for creating complex tissue structures and neural engineering applications.",
+    "brand": {
+      "@type": "Brand",
+      "name": "SND Regenics"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "SND Regenics"
+    },
+    "category": "Biomedical Equipment"
+  };
+
   return (
-    <div className="min-h-screen bg-background">
+    <>
+      <SEOHead
+        title="Products - SND Regenics | Hybrid Bioprinting & Neural Tissue Solutions"
+        description="Discover SND Regenics' innovative products including hybrid fabrication technology combining 3D bioprinting & electrospinning, and specialized biomaterials for neural tissue engineering."
+        keywords="3D bioprinting equipment, electrospinning technology, hybrid fabrication platform, neural tissue biomaterials, biomedical equipment, tissue engineering products"
+        ogTitle="Revolutionary Bioprinting Products | SND Regenics"
+        ogDescription="Explore our cutting-edge hybrid fabrication technology and biomaterials designed for advanced tissue engineering and neural research applications."
+        canonicalUrl="https://sndregenics.com/product"
+        structuredData={structuredData}
+      />
+
+      <div className="min-h-screen bg-background">
       <Navigation />
       
       {/* Hero Section */}
@@ -267,6 +294,7 @@ export default function Product() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
