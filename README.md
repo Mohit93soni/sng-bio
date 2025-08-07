@@ -9,9 +9,10 @@ A modern, professional website for SND Regenics, a leading biomedical research a
 ## 🌟 Features
 
 ### Complete Website Structure
+
 - **Homepage** - Company overview with mission and services
 - **Products** - Hybrid fabrication technology and biomaterials
-- **Services** - Custom 3D scaffolds and training programs  
+- **Services** - Custom 3D scaffolds and training programs
 - **Research & Development** - Neuroscience, 3D bioprinting, tissue culture, AI/ML
 - **About Us** - Company story, mission, values, and leadership team
 - **Contact** - Professional contact form with reCAPTCHA integration
@@ -19,6 +20,7 @@ A modern, professional website for SND Regenics, a leading biomedical research a
 - **Blog** - Research insights and thought leadership
 
 ### Technical Excellence
+
 - **Modern Stack**: React 18 + TypeScript + Vite + Tailwind CSS
 - **UI Components**: Radix UI for accessibility and consistency
 - **SEO Optimized**: Meta tags, Open Graph, structured data
@@ -27,6 +29,7 @@ A modern, professional website for SND Regenics, a leading biomedical research a
 - **Testing**: Comprehensive test suite with Vitest
 
 ### Professional Design
+
 - Custom biomedical branding with modern color scheme
 - Consistent typography and spacing
 - Interactive elements with smooth animations
@@ -64,10 +67,12 @@ shared/                  # Shared types
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
+
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -81,6 +86,7 @@ npm run dev
 ```
 
 ### Development
+
 ```bash
 npm run dev        # Start dev server
 npm run build      # Production build
@@ -94,11 +100,13 @@ npm run typecheck # TypeScript validation
 The website is ready for deployment on any modern hosting platform:
 
 ### Static Deployment (Recommended)
+
 - **Netlify**: Drag & drop `dist/spa` folder
 - **Vercel**: Connect repository and deploy
 - **GitHub Pages**: Upload `dist/spa` contents
 
 ### Full-Stack Deployment
+
 - **Railway**: Connect repository
 - **Heroku**: Use included Procfile
 - **DigitalOcean**: Deploy using Docker
@@ -108,34 +116,40 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 ## 📱 Pages Overview
 
 ### Homepage
+
 - Hero section with company mission
 - Research areas showcase
 - Products and services preview
 - Call-to-action sections
 
 ### Products
+
 - Hybrid fabrication technology details
 - Biomaterials for neural tissue engineering
 - Technology specifications and benefits
 
-### Services  
+### Services
+
 - Custom 3D scaffolds and soft tissues
 - Comprehensive training programs
 - Consulting and analysis services
 
 ### Research & Development
+
 - Neuroscience research initiatives
 - 3D bioprinting and scaffolding projects
 - Neural tissue culture systems
 - Bioinformatics and machine learning
 
 ### About Us
+
 - Company mission and story
 - Core values and technology advantages
 - Leadership team profiles
 - Company statistics and achievements
 
 ### Contact
+
 - Professional contact form
 - Business information and hours
 - Multiple contact methods
@@ -144,16 +158,19 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 ## 🎨 Design System
 
 ### Colors
+
 - **Primary**: Teal/Cyan for biomedical branding
 - **Secondary**: Supporting grays and whites
 - **Accent**: Light blue for highlights
 
 ### Typography
+
 - **Headings**: Bold, clear hierarchy
 - **Body**: Readable font sizing
 - **Code**: Monospace for technical content
 
 ### Components
+
 - Consistent button styles
 - Professional card layouts
 - Responsive navigation
@@ -162,6 +179,7 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 ## 🔧 Configuration
 
 ### Environment Variables (Optional)
+
 ```bash
 # Contact form email service
 SMTP_HOST=smtp.gmail.com
@@ -178,6 +196,7 @@ RECAPTCHA_SECRET_KEY=secret-key
 ```
 
 ### Customization
+
 - Colors: Update `client/global.css` CSS variables
 - Content: Edit page components in `client/pages/`
 - Images: Replace placeholder images with actual photos
@@ -199,6 +218,7 @@ npm run test:coverage # Coverage report
 ```
 
 Test coverage includes:
+
 - Utility functions
 - Component rendering
 - Navigation functionality
@@ -223,6 +243,7 @@ Test coverage includes:
 ## 📞 Support
 
 For technical support or questions:
+
 - **Documentation**: Check this README and DEPLOYMENT.md
 - **Issues**: Create an issue in the repository
 - **Contact**: Use the website contact form
