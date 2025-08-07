@@ -14,6 +14,7 @@ import {
   Globe,
   TrendingUp,
   CheckCircle,
+  User,
 } from "lucide-react";
 
 export default function About() {
