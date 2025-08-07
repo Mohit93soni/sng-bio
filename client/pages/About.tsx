@@ -368,7 +368,8 @@ export default function About() {
                 Meet Our <span className="text-primary">Leadership Team</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Visionary leaders driving innovation in biomedical research and regenerative medicine.
+                Visionary leaders driving innovation in biomedical research and
+                regenerative medicine.
               </p>
             </div>
 
@@ -384,12 +385,15 @@ export default function About() {
                       Founder
                     </Badge>
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Lokesh Sharma</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                    Lokesh Sharma
+                  </h3>
                   <p className="text-primary font-medium mb-4">Founder & CEO</p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Visionary leader with over 15 years of experience in biomedical engineering
-                    and tissue regeneration. Pioneer in developing hybrid bioprinting technologies
-                    for clinical applications.
+                    Visionary leader with over 15 years of experience in
+                    biomedical engineering and tissue regeneration. Pioneer in
+                    developing hybrid bioprinting technologies for clinical
+                    applications.
                   </p>
                   <div className="mt-6 pt-6 border-t border-border">
                     <div className="flex justify-center space-x-4 text-sm text-muted-foreground">
@@ -408,16 +412,23 @@ export default function About() {
                     <div className="w-32 h-32 bg-gradient-to-br from-accent/20 to-primary/30 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
                       <User className="h-16 w-16 text-primary" />
                     </div>
-                    <Badge variant="secondary" className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                    <Badge
+                      variant="secondary"
+                      className="absolute -top-2 left-1/2 transform -translate-x-1/2"
+                    >
                       CTO
                     </Badge>
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Chi Man</h3>
-                  <p className="text-primary font-medium mb-4">Chief Technology Officer</p>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                    Chi Man
+                  </h3>
+                  <p className="text-primary font-medium mb-4">
+                    Chief Technology Officer
+                  </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Technology innovator specializing in 3D bioprinting systems and neural tissue
-                    engineering. Leads our R&D initiatives and drives technological advancement
-                    in regenerative medicine.
+                    Technology innovator specializing in 3D bioprinting systems
+                    and neural tissue engineering. Leads our R&D initiatives and
+                    drives technological advancement in regenerative medicine.
                   </p>
                   <div className="mt-6 pt-6 border-t border-border">
                     <div className="flex justify-center space-x-4 text-sm text-muted-foreground">
@@ -436,16 +447,24 @@ export default function About() {
                     <div className="w-32 h-32 bg-gradient-to-br from-primary/30 to-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
                       <User className="h-16 w-16 text-primary" />
                     </div>
-                    <Badge variant="outline" className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                    <Badge
+                      variant="outline"
+                      className="absolute -top-2 left-1/2 transform -translate-x-1/2"
+                    >
                       Co-founder
                     </Badge>
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Dinesh</h3>
-                  <p className="text-primary font-medium mb-4">Co-founder & COO</p>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">
+                    Dinesh
+                  </h3>
+                  <p className="text-primary font-medium mb-4">
+                    Co-founder & COO
+                  </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Strategic operations leader with deep expertise in biomaterials science
-                    and tissue culture systems. Oversees operational excellence and ensures
-                    seamless delivery of cutting-edge solutions.
+                    Strategic operations leader with deep expertise in
+                    biomaterials science and tissue culture systems. Oversees
+                    operational excellence and ensures seamless delivery of
+                    cutting-edge solutions.
                   </p>
                   <div className="mt-6 pt-6 border-t border-border">
                     <div className="flex justify-center space-x-4 text-sm text-muted-foreground">
@@ -460,8 +479,8 @@ export default function About() {
 
             <div className="mt-16 text-center">
               <p className="text-muted-foreground mb-6">
-                Our leadership team combines decades of experience in biomedical research,
-                technology innovation, and operational excellence.
+                Our leadership team combines decades of experience in biomedical
+                research, technology innovation, and operational excellence.
               </p>
               <Button variant="outline" asChild>
                 <Link to="/contact">Join Our Team</Link>
