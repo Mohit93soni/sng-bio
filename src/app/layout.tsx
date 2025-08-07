@@ -5,6 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://sndregenics.com'),
   title: {
     default: "SND Regenics - Revolutionary Biomedical Research & 3D Bioprinting Technology",
     template: "%s | SND Regenics"
