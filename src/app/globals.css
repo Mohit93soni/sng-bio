@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 27% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 27% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 27% 8%;
+
+    --primary: 192 84% 31%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 213 27% 8%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 191 93% 88%;
+    --accent-foreground: 213 27% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 192 84% 31%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 213 27% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 213 27% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 213 27% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 191 93% 88%;
+    --primary-foreground: 213 27% 8%;
+
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 18%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 191 93% 88%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
