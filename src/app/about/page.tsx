@@ -20,10 +20,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us - SND Regenics | Leading Biomedical Research & Innovation",
-  description: "Learn about SND Regenics' mission to revolutionize regenerative medicine through cutting-edge 3D bioprinting and electrospinning technology. Discover our story, values, and commitment to advancing healthcare.",
+  description:
+    "Learn about SND Regenics' mission to revolutionize regenerative medicine through cutting-edge 3D bioprinting and electrospinning technology. Discover our story, values, and commitment to advancing healthcare.",
   openGraph: {
     title: "About SND Regenics | Biomedical Innovation Leaders",
-    description: "Discover the story behind SND Regenics and meet our leadership team driving innovation in regenerative medicine and biomedical research.",
+    description:
+      "Discover the story behind SND Regenics and meet our leadership team driving innovation in regenerative medicine and biomedical research.",
   },
 };
 
@@ -67,11 +69,11 @@ export default function AboutPage() {
                 <blockquote className="text-xl text-muted-foreground leading-relaxed italic">
                   "At SND Regenics, we've engineered a cutting-edge hybrid
                   machine that combines 3D bioprinting and electrospinning. This
-                  innovation is set to revolutionize drug testing, organogenesis,
-                  and regenerative medicine. Our technology offers customized
-                  solutions that will transform the landscape of biomedical
-                  research, laying the foundation for the future of personalized,
-                  patient-centric medicine."
+                  innovation is set to revolutionize drug testing,
+                  organogenesis, and regenerative medicine. Our technology
+                  offers customized solutions that will transform the landscape
+                  of biomedical research, laying the foundation for the future
+                  of personalized, patient-centric medicine."
                 </blockquote>
               </div>
             </Card>
