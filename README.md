@@ -1,35 +1,32 @@
-# SND Regenics - Biomedical Research Website
+# SND Regenics - Next.js Biomedical Research Website
 
-A modern, professional website for SND Regenics, a leading biomedical research and development firm specializing in 3D bioprinting, electrospinning, and regenerative medicine.
+A modern, professional website for SND Regenics, a leading biomedical research and development firm specializing in 3D bioprinting, electrospinning, and regenerative medicine - now built with Next.js 15.
 
-## 🚀 Live Website
+## 🚀 Next.js Conversion Complete
 
-**Status**: Production Ready ✅
+**Status**: Converted to Next.js 15 with App Router ✅
 
 ## 🌟 Features
 
 ### Complete Website Structure
-
 - **Homepage** - Company overview with mission and services
 - **Products** - Hybrid fabrication technology and biomaterials
-- **Services** - Custom 3D scaffolds and training programs
+- **Services** - Custom 3D scaffolds and training programs  
 - **Research & Development** - Neuroscience, 3D bioprinting, tissue culture, AI/ML
-- **About Us** - Company story, mission, values, and leadership team
-- **Contact** - Professional contact form with reCAPTCHA integration
+- **About Us** - Company story, mission, values, and leadership team (Lokesh Sharma, Chi Man, Dinesh)
+- **Contact** - Professional contact form (without reCAPTCHA - to be added later)
 - **News & Events** - Latest research updates and industry events
 - **Blog** - Research insights and thought leadership
 
 ### Technical Excellence
-
-- **Modern Stack**: React 18 + TypeScript + Vite + Tailwind CSS
-- **UI Components**: Radix UI for accessibility and consistency
-- **SEO Optimized**: Meta tags, Open Graph, structured data
+- **Modern Stack**: Next.js 15 + React 19 + TypeScript + Tailwind CSS
+- **App Router**: Latest Next.js routing with server components
+- **SEO Optimized**: Built-in Next.js SEO features, meta tags, structured data
 - **Responsive Design**: Mobile-first approach for all devices
-- **Performance**: Optimized build with code splitting
-- **Testing**: Comprehensive test suite with Vitest
+- **Performance**: Optimized with automatic code splitting
+- **Server Components**: Improved performance with React Server Components
 
 ### Professional Design
-
 - Custom biomedical branding with modern color scheme
 - Consistent typography and spacing
 - Interactive elements with smooth animations
@@ -38,45 +35,44 @@ A modern, professional website for SND Regenics, a leading biomedical research a
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React 18, TypeScript, Vite
-- **Styling**: Tailwind CSS, Radix UI Components
-- **Backend**: Express.js (for API endpoints)
+- **Framework**: Next.js 15 (App Router)
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS, Custom CSS variables
 - **Icons**: Lucide React
-- **Testing**: Vitest
-- **Build**: Vite with SWC
-- **Deployment**: Static export ready
+- **Deployment**: Vercel/Netlify optimized
+- **Build**: Next.js with SWC compiler
 
 ## 📁 Project Structure
 
 ```
-client/                   # React frontend
-├── components/ui/        # Reusable UI components
-├── pages/               # Route components
-├── hooks/               # Custom React hooks
-├── lib/                 # Utility functions
-└── global.css           # Global styles
-
-server/                  # Express backend (optional)
-├── routes/              # API route handlers
-└���─ index.ts             # Server configuration
-
-shared/                  # Shared types
-└── api.ts               # API interface definitions
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Homepage
+│   ├── globals.css        # Global styles
+│   ├── about/page.tsx     # About page
+��   ├── contact/page.tsx   # Contact page
+│   └── [other-pages]/     # Additional pages
+├── components/ui/         # Reusable UI components
+│   ├── navigation.tsx     # Site navigation
+│   ├── footer.tsx         # Site footer
+│   ├── button.tsx         # Button component
+│   └── [other-components]/
+└── lib/
+    └── utils.ts           # Utility functions
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-
-- Node.js 18+
+- Node.js 18+ 
 - npm or yarn
 
 ### Installation
-
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd snd-regenics
+cd snd-regenics-nextjs
 
 # Install dependencies
 npm install
@@ -86,151 +82,127 @@ npm run dev
 ```
 
 ### Development
-
 ```bash
-npm run dev        # Start dev server
+npm run dev        # Start dev server (localhost:3000)
 npm run build      # Production build
-npm run preview    # Preview production build
-npm test          # Run tests
-npm run typecheck # TypeScript validation
+npm run start      # Start production server
+npm run lint       # ESLint validation
+npm run typecheck  # TypeScript validation
 ```
 
 ## 🌐 Deployment
 
-The website is ready for deployment on any modern hosting platform:
+### Vercel (Recommended for Next.js)
+```bash
+# Connect your GitHub repository to Vercel
+# Automatic deployments on git push
+```
 
-### Static Deployment (Recommended)
+### Netlify
+```bash
+# Build command: npm run build
+# Publish directory: .next
+```
 
-- **Netlify**: Drag & drop `dist/spa` folder
-- **Vercel**: Connect repository and deploy
-- **GitHub Pages**: Upload `dist/spa` contents
+### Docker
+```bash
+# Build Docker image
+docker build -t snd-regenics .
 
-### Full-Stack Deployment
+# Run container
+docker run -p 3000:3000 snd-regenics
+```
 
-- **Railway**: Connect repository
-- **Heroku**: Use included Procfile
-- **DigitalOcean**: Deploy using Docker
+### Self-Hosted
+```bash
+# Build the application
+npm run build
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+# Start production server
+npm start
+```
 
 ## 📱 Pages Overview
 
-### Homepage
-
+### Homepage (/)
 - Hero section with company mission
 - Research areas showcase
 - Products and services preview
 - Call-to-action sections
 
-### Products
-
-- Hybrid fabrication technology details
-- Biomaterials for neural tissue engineering
-- Technology specifications and benefits
-
-### Services
-
-- Custom 3D scaffolds and soft tissues
-- Comprehensive training programs
-- Consulting and analysis services
-
-### Research & Development
-
-- Neuroscience research initiatives
-- 3D bioprinting and scaffolding projects
-- Neural tissue culture systems
-- Bioinformatics and machine learning
-
-### About Us
-
+### About Us (/about)
 - Company mission and story
+- Leadership team profiles (Lokesh Sharma, Chi Man, Dinesh)
 - Core values and technology advantages
-- Leadership team profiles
 - Company statistics and achievements
 
-### Contact
-
-- Professional contact form
+### Contact (/contact)
+- Professional contact form (reCAPTCHA removed - to be added later)
 - Business information and hours
 - Multiple contact methods
-- reCAPTCHA integration
+- Collaboration opportunities
 
 ## 🎨 Design System
 
 ### Colors
-
-- **Primary**: Teal/Cyan for biomedical branding
+- **Primary**: Teal/Cyan for biomedical branding (hsl(192 84% 31%))
 - **Secondary**: Supporting grays and whites
-- **Accent**: Light blue for highlights
+- **Accent**: Light blue highlights (hsl(191 93% 88%))
 
 ### Typography
-
+- **Font**: Inter (Google Fonts)
 - **Headings**: Bold, clear hierarchy
 - **Body**: Readable font sizing
-- **Code**: Monospace for technical content
 
 ### Components
-
-- Consistent button styles
+- Consistent button styles with variants
 - Professional card layouts
-- Responsive navigation
+- Responsive navigation with mobile menu
 - Accessible form elements
 
 ## 🔧 Configuration
 
-### Environment Variables (Optional)
-
+### Environment Variables
 ```bash
-# Contact form email service
+# Optional - for future email service integration
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USER=contact@sndregenics.com
 SMTP_PASS=app-password
 
-# Analytics
+# Analytics (optional)
 GOOGLE_ANALYTICS_ID=GA-XXXXXXXXX
-
-# reCAPTCHA
-RECAPTCHA_SITE_KEY=site-key
-RECAPTCHA_SECRET_KEY=secret-key
 ```
 
 ### Customization
-
-- Colors: Update `client/global.css` CSS variables
-- Content: Edit page components in `client/pages/`
-- Images: Replace placeholder images with actual photos
-- SEO: Update meta tags in each page component
+- Colors: Update CSS variables in `src/app/globals.css`
+- Content: Edit page components in `src/app/*/page.tsx`
+- Components: Modify UI components in `src/components/ui/`
+- SEO: Update metadata in each page component
 
 ## 📊 Performance
 
-- **Build Size**: ~845KB (optimized)
-- **Load Time**: <3s on average connection
-- **Lighthouse Score**: 90+ (Performance, Accessibility, SEO)
-- **Mobile Friendly**: ✅ Responsive design
+- **Framework**: Next.js 15 optimizations
+- **Bundle**: Automatic code splitting
+- **Images**: Next.js Image optimization
+- **Fonts**: Google Fonts optimization
+- **SEO**: Built-in Next.js SEO features
 
-## 🧪 Testing
+## 🧪 Removed Features (To Be Added Later)
 
-```bash
-npm test              # Run all tests
-npm run test:watch    # Watch mode
-npm run test:coverage # Coverage report
-```
+- **Google reCAPTCHA**: Contact form protection
+- **Email Service**: Form submission handling
+- **Newsletter**: Email subscription service
 
-Test coverage includes:
-
-- Utility functions
-- Component rendering
-- Navigation functionality
-- Form validation
+These can be easily added back using Next.js API routes and appropriate services.
 
 ## 📈 SEO Features
 
-- **Meta Tags**: Title, description, keywords on every page
-- **Open Graph**: Social media sharing optimization
+- **App Router SEO**: Built-in Next.js metadata API
+- **Dynamic Meta Tags**: Per-page SEO optimization
 - **Structured Data**: JSON-LD for search engines
-- **Sitemap**: Auto-generated for better indexing
-- **Canonical URLs**: Proper URL structure
+- **Sitemap**: Automatic generation
+- **Open Graph**: Social media sharing
 
 ## 🎯 Browser Support
 
@@ -243,21 +215,29 @@ Test coverage includes:
 ## 📞 Support
 
 For technical support or questions:
-
-- **Documentation**: Check this README and DEPLOYMENT.md
+- **Documentation**: Check this README and Next.js docs
 - **Issues**: Create an issue in the repository
 - **Contact**: Use the website contact form
+
+## 🎉 Migration Complete
+
+Successfully converted from React/Vite to Next.js 15:
+
+✅ **Converted Features**:
+- All pages migrated to App Router
+- Components converted to Next.js patterns
+- Routing updated from React Router to Next.js
+- SEO optimization with Next.js metadata API
+- Removed reCAPTCHA and email services (as requested)
+- Updated build and deployment processes
+
+✅ **Ready for Deployment**: The Next.js version is production-ready and optimized for modern web deployment platforms.
+
+---
 
 ## 📄 License
 
 Private project for SND Regenics. All rights reserved.
 
----
-
-## 🎉 Ready for Production
-
-This website is fully functional, professionally designed, and ready for immediate deployment. All features have been tested and optimized for production use.
-
-**Deploy Status**: ✅ Production Ready
+**Version**: 2.0.0 - Next.js Conversion  
 **Last Updated**: January 2025
-**Version**: 1.0.0
