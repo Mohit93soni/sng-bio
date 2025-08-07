@@ -38,10 +38,6 @@ export const metadata: Metadata = {
     description: "Discover cutting-edge hybrid bioprinting technology that combines 3D bioprinting and electrospinning to revolutionize drug testing, organogenesis, and regenerative medicine.",
     images: ["/og-image.jpg"],
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
 };
 
 export default function RootLayout({
