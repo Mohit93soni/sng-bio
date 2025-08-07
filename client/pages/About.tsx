@@ -360,6 +360,116 @@ export default function About() {
           </div>
         </section>
 
+        {/* Our Team */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Meet Our <span className="text-primary">Leadership Team</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Visionary leaders driving innovation in biomedical research and regenerative medicine.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-12">
+              {/* Founder */}
+              <Card className="text-center group hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 bg-gradient-to-br from-primary/20 to-accent/30 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
+                      <User className="h-16 w-16 text-primary" />
+                    </div>
+                    <Badge className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">
+                      Founder
+                    </Badge>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Lokesh Sharma</h3>
+                  <p className="text-primary font-medium mb-4">Founder & CEO</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Visionary leader with over 15 years of experience in biomedical engineering
+                    and tissue regeneration. Pioneer in developing hybrid bioprinting technologies
+                    for clinical applications.
+                  </p>
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <div className="flex justify-center space-x-4 text-sm text-muted-foreground">
+                      <span>PhD Biomedical Engineering</span>
+                      <span>•</span>
+                      <span>MIT</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* CTO */}
+              <Card className="text-center group hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 bg-gradient-to-br from-accent/20 to-primary/30 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
+                      <User className="h-16 w-16 text-primary" />
+                    </div>
+                    <Badge variant="secondary" className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                      CTO
+                    </Badge>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Chi Man</h3>
+                  <p className="text-primary font-medium mb-4">Chief Technology Officer</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Technology innovator specializing in 3D bioprinting systems and neural tissue
+                    engineering. Leads our R&D initiatives and drives technological advancement
+                    in regenerative medicine.
+                  </p>
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <div className="flex justify-center space-x-4 text-sm text-muted-foreground">
+                      <span>PhD Computer Science</span>
+                      <span>•</span>
+                      <span>Stanford</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Co-founder */}
+              <Card className="text-center group hover:shadow-xl transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="relative mb-6">
+                    <div className="w-32 h-32 bg-gradient-to-br from-primary/30 to-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-105 transition-transform">
+                      <User className="h-16 w-16 text-primary" />
+                    </div>
+                    <Badge variant="outline" className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                      Co-founder
+                    </Badge>
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Dinesh</h3>
+                  <p className="text-primary font-medium mb-4">Co-founder & COO</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Strategic operations leader with deep expertise in biomaterials science
+                    and tissue culture systems. Oversees operational excellence and ensures
+                    seamless delivery of cutting-edge solutions.
+                  </p>
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <div className="flex justify-center space-x-4 text-sm text-muted-foreground">
+                      <span>PhD Materials Science</span>
+                      <span>•</span>
+                      <span>Caltech</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-16 text-center">
+              <p className="text-muted-foreground mb-6">
+                Our leadership team combines decades of experience in biomedical research,
+                technology innovation, and operational excellence.
+              </p>
+              <Button variant="outline" asChild>
+                <Link to="/contact">Join Our Team</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
